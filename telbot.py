@@ -1,11 +1,15 @@
-import telebot
+from telebot import types, TeleBot
+import configparser
 
-bot = telebot.TeleBot('1084847822:AAFh2U1ORn6Vu-vEj8D9jh4J9XaD5xVM1TU')
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+bot = TeleBot(config['DEFAULT']['Token'])
 
 
-keyboard1 = telebot.types.ReplyKeyboardMarkup(True, True)
+keyboard1 = types.ReplyKeyboardMarkup(True, True)
 keyboard1.row('Привет', 'Пока')
-keyboard2 = telebot.types.ReplyKeyboardMarkup(True, True)
+keyboard2 = types.ReplyKeyboardMarkup(True, True)
 keyboard2.row('Как дела', 'Пока')
 
 

@@ -1,5 +1,6 @@
 appdirs==1.4.3
 certifi==2018.1.18
+configparser==13.2.0
 Cython==0.23
 Django==1.11.28
 docutils==0.13.1
@@ -13,5 +14,6 @@ pyTelegramBotAPI==3.6.1
 python-telegram-bot==7.0.1
 requests==2.20.0
 six==1.10.0
+telebot==3.6.1
 virtualenv==15.1.0
 virtualenv-clone==0.3.0
