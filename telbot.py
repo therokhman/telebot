@@ -1,10 +1,7 @@
 import telebot
-import configparser
 
-config = configparser.ConfigParser()
-config.read('config.ini')
+bot = telebot.TeleBot('1084847822:AAFh2U1ORn6Vu-vEj8D9jh4J9XaD5xVM1TU')
 
-bot = telebot.TeleBot(config['DEFAULT']['Token'])
 
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard1.row('Привет', 'Пока')
