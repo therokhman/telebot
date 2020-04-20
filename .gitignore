@@ -113,7 +113,8 @@ venv.bak/
 .idea
 .vscode
 
-config.py
+config
+
 # Spyder project settings
 .spyderproject
 .spyproject

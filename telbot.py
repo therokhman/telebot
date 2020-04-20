@@ -1,8 +1,8 @@
 from telebot import types, TeleBot
-from config import *
+from dynaconf import settings as _settings
 
 
-bot = TeleBot(Token)
+bot = TeleBot(_settings.TOKEN)
 
 
 keyboard1 = types.ReplyKeyboardMarkup(True, True)
