@@ -2,7 +2,7 @@ from telebot import types, TeleBot
 from dynaconf import settings as _settings
 
 
-bot = TeleBot(_settings.TOKEN)
+bot = TeleBot(_settings.SECRET_KEY)
 
 
 keyboard1 = types.ReplyKeyboardMarkup(True, True)
