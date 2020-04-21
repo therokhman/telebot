@@ -11,6 +11,7 @@ black = "==19.10b0"
 [packages]
 pytelegrambotapi = "*"
 dynaconf = {extras = ["yaml"],version = "*"}
+pyowm = "*"
 
 [requires]
 python_version = "3.8"
